@@ -23,12 +23,7 @@ def user_login(request):
         email = request.POST['email']
         password = request.POST['pass']
         
-        print(email)
-        print(password)
-        # user = auth.authenticate(email=email, password=password)
-        # if user is not None:
-        #     auth.login(request,user)
-        #     return HttpResponse('<h1>Logged IN</h1>')
+       
         user = authenticate(email=email, password=password)
         if user is not None and user.is_admin == False:
             
