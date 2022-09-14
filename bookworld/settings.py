@@ -26,7 +26,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['bookworld-store-env.eba-3ifhm227.us-west-2.elasticbeanstalk.com']
+ALLOWED_HOSTS = ['http://bookworld-store-env.eba-3ifhm227.us-west-2.elasticbeanstalk.com']
 #Paypal
 ACCOUNT_SID=config("account_sid") 
 AUTH_TOKEN=config("auth_token")
